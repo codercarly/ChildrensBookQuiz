@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleWidth">350dp</dimen>
+    <dimen name="titleHeight">200dp</dimen>
+    <dimen name="questionWidth">150dp</dimen>
+
+</resources>

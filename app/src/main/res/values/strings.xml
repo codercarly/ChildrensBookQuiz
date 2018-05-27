@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Children\'s Book Quiz</string>
+
+    <string name="subtitle">Complete the book titles and prove your literary genius!</string>
+
+    <!-- Question 1 -->
+    <string name="Q1">Question 1:</string>
+    <string name="Q1Question">"Don\'t Let the Pigeon Drive the __________"?</string>
+    <string name="Q1Answer1">Tractor</string>
+    <string name="Q1Answer2">Bus</string>
+    <string name="Q1Answer3">Race car</string>
+    <string name="Q1Answer4">Scooter</string>
+
+    <!-- Question 2 -->
+    <string name="Q2">Question 2:</string>
+    <string name="Q2Question">"Llama Llama Red __________"?</string>
+    <string name="Q2Answer1">Apple</string>
+    <string name="Q2Answer2">Barn</string>
+    <string name="Q2Answer3">Strawberry</string>
+    <string name="Q2Answer4">Pajama</string>
+
+    <!-- Question 3 -->
+    <string name="Q3">Question 3:</string>
+    <string name="Q3Question">"The Cat in the __________"?</string>
+    <string name="Q3Answer1">Sandals</string>
+    <string name="Q3Answer2">Trousers</string>
+    <string name="Q3Answer3">Hat</string>
+    <string name="Q3Answer4">Box</string>
+
+    <!-- Question 4 -->
+    <string name="Q4">Question 4:</string>
+    <string name="Q4Question">"The Very __________ Caterpillar"?</string>
+    <string name="Q4Answer">Type your answer here &#8230;</string>
+    <string name="Hungry">Hungry</string>
+
+    <!-- Question 5 -->
+    <string name="Q5">Question 5:</string>
+    <string name="Q5Question">"Cloudy With a Chance of __________"?</string>
+    <string name="Q5Answer1">Meatballs</string>
+    <string name="Q5Answer2">Showers</string>
+    <string name="Q5Answer3">Pasta</string>
+    <string name="Q5Answer4">Giant Donuts</string>
+
+    <!-- Question 6 -->
+    <string name="Q6">Question 6:</string>
+    <string name="Q6Question">"Harry Potter and the __________"?</string>
+    <string name="Q6Answer1">Sorcerer\'s Stone</string>
+    <string name="Q6Answer2">Goblet of Fire</string>
+    <string name="Q6Answer3">Elf on the Shelf</string>
+    <string name="Q6Answer4">Half-Blood Prince</string>
+
+    <!-- Question 7 -->
+    <string name="Q7">Question 7:</string>
+    <string name="Q7Question">"Percy __________ and the Olympians"?</string>
+    <string name="Q7Answer1">Johnson</string>
+    <string name="Q7Answer2">Jones</string>
+    <string name="Q7Answer3">Jackson</string>
+    <string name="Q7Answer4">Juarez</string>
+
+    <!-- Question 8 -->
+    <string name="Q8">Question 8:</string>
+    <string name="Q8Question">"The Polar __________ "?</string>
+    <string name="Q8Answer">Type your answer here &#8230;</string>
+    <string name="Express">Express</string>
+
+    <!-- Question 9 -->
+    <string name="Q9">Question 9:</string>
+    <string name="Q9Question">"Little House __________"?</string>
+    <string name="Q9Answer1">in the Big Woods</string>
+    <string name="Q9Answer2">on the Hill</string>
+    <string name="Q9Answer3">on the Prairie</string>
+    <string name="Q9Answer4">in the Backyard</string>
+
+    <!-- Question 10 -->
+    <string name="Q10">Question 10:</string>
+    <string name="Q10Question">"Where the __________ Things Are"?</string>
+    <string name="Q10Answer1">Little</string>
+    <string name="Q10Answer2">Big</string>
+    <string name="Q10Answer3">Weird</string>
+    <string name="Q10Answer4">Wild</string>
+
+    <!-- Submit Answers -->
+    <string name="Submit">Submit your answers!</string>
+
+    <!-- Restart Quiz -->
+    <string name="Restart">Take the Quiz Again!</string>
+
+</resources>
+
+
