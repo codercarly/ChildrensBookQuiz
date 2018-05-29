@@ -3,6 +3,8 @@
 
     <string name="subtitle">Complete the book titles and prove your literary genius!</string>
 
+    <string name="instructions">The quiz consists of multiple choice, fill-in-the-blank, and multiple answer questions. Good luck!</string>
+
     <!-- Question 1 -->
     <string name="Q1">Question 1:</string>
     <string name="Q1Question">"Don\'t Let the Pigeon Drive the __________"?</string>
