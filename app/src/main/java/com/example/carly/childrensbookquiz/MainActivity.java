@@ -7,6 +7,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,13 +33,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Radio Group ID's
+        // Radio Button ID's (Answers and Groups)
         q1Answer = findViewById(R.id.Q1Correct);
         q2Answer = findViewById(R.id.Q2Correct);
         q3Answer = findViewById(R.id.Q3Correct);
         q5Answer = findViewById(R.id.Q5Correct);
         q7Answer = findViewById(R.id.Q7Correct);
         q10Answer = findViewById(R.id.Q10Correct);
+        q1Group = findViewById(R.id.Q1Group);
+        q2Group = findViewById(R.id.Q2Group);
+        q3Group = findViewById(R.id.Q3Group);
+        q5Group = findViewById(R.id.Q5Group);
+        q7Group = findViewById(R.id.Q7Group);
+        q10Group = findViewById(R.id.Q10Group);
         RadioGroups = new RadioGroup[]{q1Group, q2Group, q3Group, q5Group, q7Group, q10Group};
 
         // Check Box ID's
@@ -56,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         // Write-in ID's
         q4Answer = findViewById(R.id.Q4Answer);
         q8Answer = findViewById(R.id.Q8Answer);
+        WriteIn = new EditText[]{q4Answer, q8Answer};
     }
 
     public void submitQuiz(View view) {
@@ -85,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
         if (q8Answer.getText().toString().equals("Express")) { // Question 8
             score += 1;
         }
-        if (q9CheckBoxA.isChecked() && q9CheckBoxB.isChecked()) { // Question 9
+        if (q9CheckBoxA.isChecked() && q9CheckBoxC.isChecked()) { // Question 9
             score += 1;
         }
         if (q10Answer.isChecked()) { // Question 10
@@ -93,17 +101,31 @@ public class MainActivity extends AppCompatActivity {
         }
         // Score Quiz
         if (score == 10) {
-            Toast.makeText(this, "You have a perfect score! You're a great reader!", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "10 out of 10! You have a perfect score! You're a great reader!", Toast.LENGTH_LONG).show();
         } else if (score == 9) {
-            Toast.makeText(this, "You missed 1! You're practically a great reader!", Toast.LENGTH_LONG).show();
-        } else if (score >= 6) {
-            Toast.makeText(this, "Um, you've missed a couple. Maybe find a Elementary student to help you study up.", Toast.LENGTH_LONG).show();
-        } else {
-            Toast.makeText(this, "Yikes, your score is terrible! Time to go back to Kindergarten.", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "9 out of 10! You missed 1! You're practically a great reader!", Toast.LENGTH_LONG).show();
+        } else if (score == 8) {
+            Toast.makeText(this, "8 out of 10! Mom is okay with this score.", Toast.LENGTH_LONG).show();
+        } else if (score == 7) {
+            Toast.makeText(this, "7 out of 10! Mom is not okay with this score.", Toast.LENGTH_LONG).show();
+        } else if (score == 6) {
+            Toast.makeText(this, "6 out of 10! Um, maybe find a Elementary student to help you study up.", Toast.LENGTH_LONG).show();
+        } else if (score == 5) {
+            Toast.makeText(this, "5 out of 10! Try reading Cat in the Hat, that's an easy one.", Toast.LENGTH_LONG).show();
+        } else if (score == 4) {
+            Toast.makeText(this, "4 out of 10! Mom is worried.", Toast.LENGTH_LONG).show();
+        } else if (score == 3) {
+            Toast.makeText(this, "3 out of 10! Mom says you can't move back home, she turned your old room into a craft room.", Toast.LENGTH_LONG).show();
+        } else if (score == 2) {
+            Toast.makeText(this, "2 out of 10! *face palm*.", Toast.LENGTH_LONG).show();
+        } else if (score == 1) {
+            Toast.makeText(this, "1 out of 10! Time to go back to Kindergarten.", Toast.LENGTH_LONG).show();
+        } else if (score == 0) {
+            Toast.makeText(this, "0 out of 10! Mom has disowned you.", Toast.LENGTH_LONG).show();
         }
     }
 
-    public void restartQuiz (View view){
+    public void restartQuiz(View view) {
         // Reset Score to 0
         score = 0;
 
@@ -121,5 +143,9 @@ public class MainActivity extends AppCompatActivity {
         for (EditText editText : WriteIn) {
             editText.setText("");
         }
+
+        // Scroll to top of screen
+        ScrollView scrollView = (ScrollView) findViewById(R.id.scrollView);
+            scrollView.scrollTo(0,0);
     }
 }
