@@ -1,6 +1,8 @@
 # Childrens Book Quiz App
 An educational app that quizzes the user about children's books!
 
+<img src="https://github.com/codercarly/ChildrensBookQuiz/blob/master/childrensbook_animated_1.giff" width="200">
+
 # Project Overview:
 - Develop an app, taking it from the idea stage to build stage. 
 - Create an educational app that quizzes a user about a certain topic of your choice. 
